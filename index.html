@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>coresera</title>
+    <script src="js/angular.min.js"></script>
+    <script src="app.js"></script>
   </head>
-  <body>
-    <h1>1434898090 @i am ready to check new i am writing script its good rto see baby</h1>
+  <body ng-app="NameCal">
+    <h1> NameCal </h1>
+    <div ng-controller="NameCalController">
+        <input type="text" ng-model="name" ng-keyup="displayValue();">
+
+        <div>total numariv value : {{totalvalue}}</div>
+
+    </div>
   </body>
 </html>
